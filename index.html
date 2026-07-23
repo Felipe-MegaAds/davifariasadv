@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- 
+  Este arquivo representa a estrutura principal do site (index.html).
+  Todo o código está organizado de forma semântica, contendo seções para 
+  apresentação do advogado, áreas de atuação em Busca e Apreensão, 
+  diferenciais, FAQ interativo e rodapé de contatos obrigatórios.
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davi Gonçalves Advocacia | Especialista em Busca e Apreensão de Veículos</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Proteja seu patrimônio contra abusos bancários. Dr. Davi Gonçalves - Advogado especialista em Busca e Apreensão de Veículos e Revisão de Contratos de Financiamento. Atendimento ágil e online." />
+  <meta name="keywords" content="busca e apreensão de veículos, reverter busca e apreensão, revisão de contrato de financiamento, juros abusivos banco, advogado busca e apreensão joinville, advocacia de luxo, direito bancário" />
+  <meta name="author" content="Davi Gonçalves Advocacia" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://davifariasadv.com.br/" />
+  <meta property="og:title" content="Davi Gonçalves Advocacia | Defesa em Busca e Apreensão" />
+  <meta property="og:description" content="Seu veículo corre risco de busca e apreensão? Agimos com urgência para anular cobranças abusivas e defender seu patrimônio." />
+  <meta property="og:image" content="https://davifariasadv.com.br/assets/preview.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://davifariasadv.com.br/" />
+  <meta property="twitter:title" content="Davi Gonçalves Advocacia | Defesa em Busca e Apreensão" />
+  <meta property="twitter:description" content="Seu veículo corre risco de busca e apreensão? Agimos com urgência para anular cobranças abusivas e defender seu patrimônio." />
+
+  <!-- Google Fonts: Playfair Display para títulos luxuosos e Inter para corpo legível -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Favicon com o brasão dourado do escritório -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Folha de Estilo Principal -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- CABEÇALHO (HEADER) FIXO COM NAVEGAÇÃO -->
+  <header class="main-header">
+    <div class="container header-container">
+      <!-- Logotipo elegante com monograma -->
+      <a href="#inicio" class="logo" id="header-logo-link">
+        <img src="assets/logo.png" alt="Brasão Davi Gonçalves Advocacia" class="logo-monogram-img">
+        <div class="logo-text">
+          <span class="logo-title">DAVI GONÇALVES</span>
+          <span class="logo-subtitle">ADVOCACIA</span>
+        </div>
+      </a>
+
+      <!-- Menu de Navegação para telas Desktop -->
+      <nav class="nav-menu" id="main-navigation">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#alerta" class="nav-link">Alerta Urgente</a></li>
+          <li><a href="#sobre" class="nav-link">O Escritório</a></li>
+          <li><a href="#servicos" class="nav-link">Como Atuamos</a></li>
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#localizacao" class="nav-link">Localização</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão CTA no cabeçalho com classe de rastreamento -->
+      <div class="header-cta">
+        <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Preciso%20de%20ajuda%20urgente%20com%20busca%20e%20apreens%C3%A3o%20de%20ve%C3%ADculo." 
+           class="btn btn-gold elementor-button" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           id="header-cta-whatsapp">
+          <!-- Ícone do WhatsApp em SVG -->
+          <svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18">
+            <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+          </svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Botão Menu Hambúrguer para telas Mobile -->
+      <button class="mobile-menu-toggle" aria-label="Abrir Menu de Navegação" id="menu-toggle-button">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE RETRÁTIL (SOBREPOSIÇÃO) -->
+  <div class="mobile-menu-overlay" id="mobile-menu-container">
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu-header">
+        <img src="assets/logo.png" alt="Brasão Davi Gonçalves Advocacia" class="logo-monogram-img">
+        <button class="mobile-menu-close" aria-label="Fechar Menu" id="menu-close-button">&times;</button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+          <li><a href="#alerta" class="mobile-nav-link">Alerta Urgente</a></li>
+          <li><a href="#sobre" class="mobile-nav-link">O Escritório</a></li>
+          <li><a href="#servicos" class="mobile-nav-link">Como Atuamos</a></li>
+          <li><a href="#diferenciais" class="mobile-nav-link">Diferenciais</a></li>
+          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+          <li><a href="#localizacao" class="mobile-nav-link">Localização</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Preciso%20de%20ajuda%20urgente%20com%20busca%20e%20apreens%C3%A3o%20de%20ve%C3%ADculo." 
+           class="btn btn-gold btn-full elementor-button" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          <!-- Ícone do WhatsApp -->
+          <svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18">
+            <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+          </svg>
+          <span>Falar no WhatsApp Agora</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    
+    <!-- SEÇÃO HERO (DOBRA PRINCIPAL) -->
+    <section id="inicio" class="hero-section">
+      <!-- Fotografia de fundo com a temática da justiça -->
+      <div class="hero-bg-photo"></div>
+      <!-- Overlay escuro com gradientes elegantes e padrão sutil de linhas para legibilidade sobre a foto -->
+      <div class="hero-bg-overlay"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-text">
+        <!-- Badge de Urgência no topo -->
+        <div class="urgency-badge reveal fade-in" id="hero-alert-badge">
+          <span class="pulse-indicator"></span>
+          <span>Defesa Imediata Contra Busca e Apreensão</span>
+        </div>
+
+        <!-- Título Principal com tipografia Playfair Display -->
+        <h1 class="hero-title reveal slide-up" id="hero-main-title">
+          Seu Veículo Está Ameaçado de <span class="text-gold-gradient">Busca e Apreensão</span> ou já foi levado pelo banco?
+        </h1>
+
+        <!-- Descrição persuasiva -->
+        <p class="hero-desc reveal slide-up" id="hero-main-desc">
+          Não se desespere nem entregue seu patrimônio para juros abusivos de financiamento. Agimos rapidamente com as ferramentas legais adequadas para contestar a apreensão, reverter liminares e renegociar a sua dívida com segurança.
+        </p>
+
+        <!-- Botões de Ação na Dobra Principal -->
+        <div class="hero-actions reveal slide-up" id="hero-cta-buttons">
+          <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Meu%20ve%C3%ADculo%20est%C3%A1%20em%20situa%C3%A7%C3%A3o%20de%20busca%20e%20apreens%C3%A3o%20de%20ve%C3%ADculo%20e%20preciso%20de%20ajuda%20urgente%21" 
+             class="btn btn-gold btn-lg btn-glow elementor-button" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             id="hero-primary-cta">
+            <svg class="icon-svg" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+            </svg>
+            <span>Falar com Especialista Agora</span>
+          </a>
+          
+          <a href="#servicos" class="btn btn-outline btn-lg" id="hero-secondary-cta">
+            <span>Conhecer Nossos Serviços</span>
+          </a>
+        </div>
+
+        <!-- Badges Rápidos de Credibilidade e Autoridade -->
+        <div class="hero-badges reveal slide-up" id="hero-badges-container">
+          <div class="badge-item">
+            <svg class="badge-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+            <div class="badge-text">
+              <span class="badge-title">OAB/SC 76.019</span>
+              <span class="badge-sub">Registro Oficial</span>
+            </div>
+          </div>
+
+          <div class="badge-item">
+            <svg class="badge-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+            </svg>
+            <div class="badge-text">
+              <span class="badge-title">Sigilo Absoluto</span>
+              <span class="badge-sub">Dados Criptografados</span>
+            </div>
+          </div>
+
+          <div class="badge-item">
+            <svg class="badge-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm1-15h-2v6h2V7zm0 8h-2v2h2v-2z"/>
+            </svg>
+            <div class="badge-text">
+              <span class="badge-title">Análise Especializada</span>
+              <span class="badge-sub">Contratual Rápida</span>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Retrato do Advogado em Destaque -->
+        <div class="hero-visual reveal fade-in" id="hero-visual-box">
+          <div class="hero-visual-frame">
+            <img src="assets/hero-advogado.jpg" alt="Dr. Davi Gonçalves, advogado especialista em Busca e Apreensão de Veículos" class="hero-visual-img">
+          </div>
+          <div class="hero-visual-badge">
+            <span class="exp-number">100%</span>
+            <span class="exp-text">Foco no Cliente</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE ALERTA URGENTE -->
+    <section id="alerta" class="alert-section">
+      <div class="container">
+        <div class="alert-box reveal fade-in" id="alert-box-card">
+          <div class="alert-header">
+            <svg class="alert-icon" viewBox="0 0 24 24" width="32" height="32">
+              <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+            <h2 class="alert-box-title">O Banco já deu entrada no processo? Entenda o risco:</h2>
+          </div>
+          <div class="alert-content-grid">
+            <div class="alert-info-card">
+              <span class="alert-card-num">01</span>
+              <h3>Sem Aviso Prévio</h3>
+              <p>O oficial de justiça pode bater à sua porta com um mandado de apreensão sem que você seja avisado antes no processo. A ação do banco é silenciosa.</p>
+            </div>
+            <div class="alert-info-card">
+              <span class="alert-card-num">02</span>
+              <h3>Prazo de 5 Dias</h3>
+              <p>Após o veículo ser apreendido, você tem apenas 5 dias para pagar a integralidade do saldo devedor ou 15 dias para apresentar sua defesa jurídica.</p>
+            </div>
+            <div class="alert-info-card">
+              <span class="alert-card-num">03</span>
+              <h3>Perda e Leilão</h3>
+              <p>Se nenhuma defesa técnica for apresentada a tempo, o banco consolida a propriedade, vende o veículo em leilão por valores baixos e você continua devendo o restante.</p>
+            </div>
+          </div>
+          <div class="alert-box-action">
+            <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Meu%20ve%C3%ADculo%20est%C3%A1%20em%20situa%C3%A7%C3%A3o%20de%20busca%20e%20apreens%C3%A3o%20e%20preciso%20de%20atendimento%20urgente." 
+               class="btn btn-gold elementor-button" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               id="alert-cta-whatsapp">
+              <span>Evitar a Perda do Meu Veículo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE (SOBRE O ADVOGADO) -->
+    <section id="sobre" class="about-section">
+      <div class="container about-container">
+        
+        <!-- Bloco de Imagem/Identidade Visual Luxo -->
+        <div class="about-visual reveal fade-in" id="about-visual-box">
+          <div class="portrait-card">
+            <!-- Representação gráfica de luxo com molduras e texturas -->
+            <div class="portrait-frame">
+              <div class="portrait-bg">
+                <img src="assets/sobre-advogado.jpg" alt="Dr. Davi Gonçalves em seu escritório de advocacia" class="portrait-img">
+              </div>
+            </div>
+            <div class="experience-card">
+              <span class="exp-number">OAB/SC</span>
+              <span class="exp-text">76.019</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo de Texto e Pilares -->
+        <div class="about-content reveal slide-up" id="about-text-content">
+          <span class="section-tag">QUEM SOMOS</span>
+          <h2 class="section-title">Defesa Patrimonial Próxima, Ética e Inabalável</h2>
+          <p class="about-text-p">
+            O escritório **Davi Gonçalves Advocacia** é especializado em Direito Bancário e Proteção ao Consumidor, com atuação focada em combater práticas abusivas impostas por bancos e instituições financeiras. 
+          </p>
+          <p class="about-text-p text-muted">
+            Sabemos que o atraso de parcelas de financiamento decorre de momentos difíceis, e os bancos aproveitam-se dessa vulnerabilidade aplicando juros extorsivos, capitalização ilegal e taxas não autorizadas que tornam a dívida impagável. Trabalhamos sob a bandeira da transparência total, garantindo que você compreenda cada etapa do seu processo de defesa.
+          </p>
+
+          <!-- Grid de Valores/Diferenciais do Escritório -->
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon-container">
+                <svg class="pillar-icon" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+                </svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Foco no Consumidor</h4>
+                <p>Estratégias construídas para proteger o devedor e restaurar a igualdade contratual.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-container">
+                <svg class="pillar-icon" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.79L11 13.5V7h1.5v5.78l3.7 2.22-.71 1.21z"/>
+                </svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Agilidade Prática</h4>
+                <p>Ações e liminares distribuídas com urgência máxima para preservar o veículo.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-action">
+            <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20contrato%20de%20financiamento." 
+               class="btn btn-gold elementor-button" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               id="about-cta-whatsapp">
+              <span>Solicitar Análise de Contrato</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS (COMO ATUAMOS) -->
+    <section id="servicos" class="services-section">
+      <div class="container">
+        
+        <div class="section-header reveal slide-up">
+          <span class="section-tag">COMO ATUAMOS</span>
+          <h2 class="section-title">Estratégias Jurídicas Especializadas</h2>
+          <p class="section-desc">Atuação cirúrgica contra abusos de bancos e financeiras para resguardar seu meio de transporte e trabalho.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Card de Serviço 1 -->
+          <div class="service-card reveal slide-up" id="service-card-defesa">
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+              </svg>
+            </div>
+            <h3>Defesa em Ações de Busca e Apreensão</h3>
+            <p>
+              Apresentamos contestação jurídica imediata para provar irregularidades processuais cometidas pelos bancos, tais como falta de notificação extrajudicial válida, o que pode anular todo o processo e forçar a devolução do veículo apreendido.
+            </p>
+            <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Preciso%20de%20defesa%20contra%20busca%20e%20apreens%C3%A3o%20de%20ve%C3%ADculo." 
+               class="service-link elementor-button"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg class="service-link-icon" viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+              </svg>
+              <span>Contestar Busca e Apreensão</span>
+              <svg class="link-arrow" viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card de Serviço 2 -->
+          <div class="service-card reveal slide-up" id="service-card-revisional">
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+              </svg>
+            </div>
+            <h3>Revisão de Contratos de Financiamento</h3>
+            <p>
+              Avaliamos minuciosamente o contrato para identificar juros capitalizados que superam abusivamente a taxa média de mercado do Banco Central, tarifas ocultas ou seguros embutidos que caracterizam venda casada. Reduzimos o valor real da sua prestação.
+            </p>
+            <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Quero%20revisar%20os%20juros%20do%20meu%20contrato%20de%20financiamento." 
+               class="service-link elementor-button"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg class="service-link-icon" viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+              </svg>
+              <span>Reduzir Minhas Parcelas</span>
+              <svg class="link-arrow" viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card de Serviço 3 -->
+          <div class="service-card reveal slide-up" id="service-card-quitacao">
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="currentColor" d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+              </svg>
+            </div>
+            <h3>Negociação Extrajudicial de Dívidas</h3>
+            <p>
+              Intermediamos o contato direto com a assessoria de cobrança do banco credor para alcançar propostas de quitação com descontos significativos (chegando a até 80% do saldo devedor original), encerrando o contrato e blindando seu nome.
+            </p>
+            <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Quero%20ajuda%20para%20negociar%20e%20quitar%20minha%20d%C3%ADvida%20de%20financiamento." 
+               class="service-link elementor-button"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg class="service-link-icon" viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+              </svg>
+              <span>Negociar Quitação de Dívida</span>
+              <svg class="link-arrow" viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO DIFERENCIAIS -->
+    <section id="diferenciais" class="differentials-section">
+      <div class="container">
+        
+        <div class="section-header reveal slide-up">
+          <span class="section-tag">POR QUE CONTRATAR</span>
+          <h2 class="section-title">Nossos Diferenciais Defensivos</h2>
+          <p class="section-desc">Estrutura e conhecimento técnico pensados para atuar com a velocidade exigida por processos de urgência.</p>
+        </div>
+
+        <div class="differentials-grid">
+          
+          <div class="diff-card reveal slide-up" id="diff-card-1">
+            <div class="diff-header">
+              <span class="diff-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                </svg>
+              </span>
+              <h3>Atendimento 100% Digital</h3>
+            </div>
+            <p>Atendemos clientes de Joinville e de todo o estado de Santa Catarina com processos totalmente eletrônicos e assinatura digital simplificada de documentos.</p>
+          </div>
+
+          <div class="diff-card reveal slide-up" id="diff-card-2">
+            <div class="diff-header">
+              <span class="diff-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.79L11 13.5V7h1.5v5.78l3.7 2.22-.71 1.21z"/>
+                </svg>
+              </span>
+              <h3>Velocidade de Reação</h3>
+            </div>
+            <p>O prazo em ações de busca e apreensão corre rápido. Nossa equipe prioriza a redação de petições urgentes de agravo e liminares de suspensão em poucas horas.</p>
+          </div>
+
+          <div class="diff-card reveal slide-up" id="diff-card-3">
+            <div class="diff-header">
+              <span class="diff-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="currentColor" d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-17h-2v2h2V5zm2 4H9v2h6V9zm2 4H7v2h10v-2z"/>
+                </svg>
+              </span>
+              <h3>Análise de Contrato Detalhada</h3>
+            </div>
+            <p>Examinamos cada cláusula com softwares jurídicos avançados para descobrir abusos que passam despercebidos por profissionais generalistas.</p>
+          </div>
+
+          <div class="diff-card reveal slide-up" id="diff-card-4">
+            <div class="diff-header">
+              <span class="diff-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                </svg>
+              </span>
+              <h3>Comunicação Direta</h3>
+            </div>
+            <p>Sem intermediários. Você conversa diretamente com o advogado especialista responsável pela condução e relatórios de acompanhamento da sua defesa.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO FAQ (PERGUNTAS FREQUENTES ACCORDION) -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        
+        <div class="section-header reveal slide-up">
+          <span class="section-tag">DÚVIDAS FREQUENTES</span>
+          <h2 class="section-title">Respostas Para Suas Dúvidas</h2>
+          <p class="section-desc">Confira esclarecimentos rápidos sobre como funciona a lei de busca e apreensão e quais medidas podemos tomar.</p>
+        </div>
+
+        <div class="faq-accordion-container reveal slide-up" id="faq-accordion-wrapper">
+          
+          <!-- Item FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" id="faq-trigger-1">
+              <span>Quantas parcelas em atraso o banco precisa para pedir a busca e apreensão?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-content" id="faq-content-1">
+              <div class="faq-content-inner">
+                <p>
+                  Legalmente, o atraso de **apenas 1 parcela** já autoriza o banco a dar início ao processo judicial de busca e apreensão. Na prática, a maioria das instituições financeiras opta por aguardar de 2 a 3 parcelas antes de ajuizar a ação, mas não há qualquer obrigatoriedade de espera por parte da instituição.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" id="faq-trigger-2">
+              <span>O banco pode apreender meu carro sem me notificar formalmente antes?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-content" id="faq-content-2">
+              <div class="faq-content-inner">
+                <p>
+                  Não. Para que a liminar de busca e apreensão seja válida, o banco deve comprovar em juízo que enviou uma **notificação extrajudicial prévia** (normalmente por cartório ou carta registrada com Aviso de Recebimento - AR) ao seu endereço do contrato. A falta de comprovação desta notificação válida é um dos principais motivos legais que usamos para **anular e extinguir** a busca e apreensão.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" id="faq-trigger-3">
+              <span>O oficial de justiça levou meu veículo hoje. O que eu devo fazer?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-content" id="faq-content-3">
+              <div class="faq-content-inner">
+                <p>
+                  Você deve agir imediatamente. O prazo legal para tentar reaver o bem é curtíssimo: **5 dias corridos** para pagar a totalidade do saldo devedor apresentado pelo banco no processo (quitação das parcelas vencidas e vincendas) ou **15 dias úteis** para apresentar contestação jurídica formal demonstrando abusividades e falhas processuais do banco. Cada hora é crucial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" id="faq-trigger-4">
+              <span>Como a Ação Revisional pode me ajudar a evitar a perda do veículo?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-content" id="faq-content-4">
+              <div class="faq-content-inner">
+                <p>
+                  A Ação Revisional visa recalcular o saldo devedor retirando cláusulas ilegais, taxas de juros acima da taxa de mercado do Banco Central, tarifas indevidas e seguros cobrados sem consentimento. Ao comprovar em juízo que as cobranças do banco são abusivas e desvirtuam a dívida, é possível pleitear a **liminar para impedir a busca e apreensão** enquanto durar a discussão.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" id="faq-trigger-5">
+              <span>Posso ser atendido de forma online mesmo residindo fora de Joinville?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-content" id="faq-content-5">
+              <div class="faq-content-inner">
+                <p>
+                  Sim. Atualmente, todos os tribunais de justiça brasileiros (incluindo o Tribunal de Justiça de Santa Catarina - TJSC) operam por meio de **processos 100% digitais (e-proc ou projudi)**. Isso nos possibilita analisar seu contrato, colher sua assinatura eletronicamente e distribuir sua defesa de forma ágil, independentemente da cidade em que você esteja localizado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO FINAL CHAMADA PARA AÇÃO (CTA) -->
+    <section class="final-cta-section">
+      <div class="container final-cta-container reveal fade-in">
+        <h2 class="cta-title">Não Permita que o Banco Tome Seu Veículo Sem Luta</h2>
+        <p class="cta-desc">Fale agora mesmo com um advogado especialista no assunto e tenha uma resposta jurídica imediata para defender seu direito e seu patrimônio.</p>
+        <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Gostaria%20de%20conversar%20sobre%20o%20risco%20de%20busca%20e%20apreens%C3%A3o%20do%20meu%20ve%C3%ADculo." 
+           class="btn btn-gold btn-lg btn-glow elementor-button" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           id="final-cta-whatsapp">
+          <svg class="icon-svg" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+          </svg>
+          <span>Falar Conosco Agora</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE LOCALIZAÇÃO (MAPA) -->
+    <section id="localizacao" class="location-section">
+      <div class="container">
+
+        <div class="section-header reveal slide-up">
+          <span class="section-tag">ONDE ESTAMOS</span>
+          <h2 class="section-title">Visite Nosso Escritório</h2>
+          <p class="section-desc">Atendimento presencial em Joinville e 100% digital para clientes de todo o estado de Santa Catarina, com a mesma agilidade em qualquer modalidade.</p>
+        </div>
+
+        <div class="location-info reveal slide-up">
+          <div class="location-info-item">
+            <svg class="location-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <div class="location-info-text">
+              <span class="location-info-title">Endereço</span>
+              <span class="location-info-desc">Av. Juscelino Kubitscheck, 410, Sala 906, Bloco A - Centro, Joinville - SC, 89201-906</span>
+            </div>
+          </div>
+
+          <div class="location-info-item">
+            <svg class="location-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.2a1 1 0 0 0 .25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+            </svg>
+            <div class="location-info-text">
+              <span class="location-info-title">Telefone / WhatsApp</span>
+              <span class="location-info-desc">+55 47 99672 7521</span>
+            </div>
+          </div>
+
+          <div class="location-info-item">
+            <svg class="location-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.79L11 13.5V7h1.5v5.78l3.7 2.22-.71 1.21z"/>
+            </svg>
+            <div class="location-info-text">
+              <span class="location-info-title">Horário de Atendimento</span>
+              <span class="location-info-desc">Segunda a Sexta - 08:00h às 18:00h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card reveal fade-in">
+          <iframe
+            src="https://www.google.com/maps?q=Av.+Juscelino+Kubitscheck,+410+-+Centro,+Joinville+-+SC,+89201-906&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização do escritório Davi Gonçalves Advocacia">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ (FOOTER) INSTITUCIONAL COM DADOS DO CLIENTE -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      
+      <!-- Logo e Descrição Curta -->
+      <div class="footer-col brand-col">
+        <a href="#inicio" class="logo">
+          <img src="assets/logo.png" alt="Brasão Davi Gonçalves Advocacia" class="logo-monogram-img">
+          <div class="logo-text">
+            <span class="logo-title">DAVI GONÇALVES</span>
+            <span class="logo-subtitle">ADVOCACIA</span>
+          </div>
+        </a>
+        <p class="brand-tagline">Defesa técnica focada na preservação do seu patrimônio contra juros abusivos e ações de busca e apreensão de veículos.</p>
+        <span class="oab-badge">Inscrição Profissional: <strong>OAB/SC 76.019</strong></span>
+      </div>
+
+      <!-- Links de Navegação Rápida -->
+      <div class="footer-col links-col">
+        <h4 class="footer-col-title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#alerta">Alerta Urgente</a></li>
+          <li><a href="#sobre">O Escritório</a></li>
+          <li><a href="#servicos">Como Atuamos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+
+      <!-- Contatos e Dados Fixos Obrigatórios -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-col-title">Informações de Contato</h4>
+        <ul class="footer-contacts">
+          <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span class="contact-text">Av. Juscelino Kubitscheck, 410 Sala 906 Bloco A - Centro Joinville - SC, 89201-906</span>
+          </li>
+          <li>
+            <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves." target="_blank" rel="noopener noreferrer" class="contact-link elementor-button">
+              <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+                <path fill="currentColor" d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.2a1 1 0 0 0 .25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+              </svg>
+              <span class="contact-text">+55 47 99672 7521</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:davifarias.adv@gmail.com" class="contact-link">
+              <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+                <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span class="contact-text">davifarias.adv@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.79L11 13.5V7h1.5v5.78l3.7 2.22-.71 1.21z"/>
+            </svg>
+            <span class="contact-text">Segunda a Sexta - 08:00h às 18:00h</span>
+          </li>
+        </ul>
+        
+        <!-- Link do Instagram do cliente -->
+        <div class="footer-social">
+          <a href="https://www.instagram.com/davifarias.adv/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Acessar Instagram">
+            <svg class="social-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.9 2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+            </svg>
+            <span>@davifarias.adv</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Direitos Autorais e Rodapé Final -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Davi Gonçalves Advocacia. Todos os direitos reservados. Feito com excelência para defesa do consumidor.</p>
+        <p class="oab-bottom">Dr. Davi Gonçalves | OAB/SC 76.019</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5547996727521?text=Ol%C3%A1%2C%20Dr.%20Davi%20Gon%C3%A7alves.%20Preciso%20de%20ajuda%20urgente%20contra%20busca%20e%20apreens%C3%A3o%20de%20ve%C3%ADculo." 
+     class="whatsapp-floating-btn elementor-button" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Falar no WhatsApp"
+     id="floating-whatsapp-trigger">
+    <svg viewBox="0 0 24 24" width="32" height="32">
+      <path fill="currentColor" d="M12.042 2C6.556 2 2.084 6.446 2.084 11.911C2.084 13.65 2.542 15.358 3.415 16.864L2.184 21.331C2.102 21.628 2.373 21.903 2.671 21.825L7.278 20.621C8.733 21.409 10.37 21.828 12.037 21.828C17.528 21.828 22 17.382 22 11.916C22 6.45 17.528 2 12.042 2ZM8.391 7.165C8.218 7.165 7.941 7.229 7.704 7.485C7.69 7.5 7.674 7.517 7.657 7.535C7.39 7.817 6.803 8.437 6.803 9.627C6.803 10.871 7.704 12.076 7.852 12.273C7.857 12.281 7.884 12.319 7.91 12.357C8.233 12.835 9.834 15.202 12.26 16.156C14.228 16.93 14.78 16.864 15.216 16.811C15.262 16.805 15.306 16.8 15.351 16.796C15.826 16.751 16.875 16.175 17.093 15.575C17.305 14.974 17.305 14.462 17.241 14.354C17.19 14.267 17.068 14.208 16.889 14.122C16.845 14.101 16.797 14.078 16.746 14.053C16.489 13.925 15.223 13.305 14.985 13.216C14.748 13.128 14.575 13.088 14.407 13.344C14.233 13.600 13.739 14.176 13.59 14.349C13.442 14.521 13.289 14.541 13.031 14.413C12.989 14.392 12.933 14.367 12.862 14.337C12.5 14.181 11.783 13.871 10.959 13.137C10.192 12.458 9.673 11.616 9.524 11.360C9.376 11.104 9.509 10.966 9.638 10.838C9.71 10.766 9.795 10.664 9.88 10.561C9.929 10.502 9.977 10.444 10.024 10.390C10.137 10.260 10.185 10.160 10.253 10.020C10.262 10.001 10.271 9.982 10.281 9.962C10.365 9.789 10.325 9.642 10.261 9.514C10.233 9.458 10.121 9.184 9.984 8.851C9.808 8.423 9.593 7.898 9.465 7.613C9.272 7.185 9.069 7.175 8.886 7.170C8.738 7.165 8.564 7.165 8.391 7.165Z"/>
+    </svg>
+    <span class="floating-tooltip">Defesa Imediata</span>
+  </a>
+
+  <!-- Script de Lógica do Site -->
+  <script src="js/script.js"></script>
+</body>
+</html>
