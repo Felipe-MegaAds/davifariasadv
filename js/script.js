@@ -171,4 +171,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', highlightNavSection);
 
+  // =========================================
+  // 6. RASTREAMENTO DE CLIQUES DO WHATSAPP (GOOGLE ADS & GTM)
+  // =========================================
+  // Monitora cliques em todos os links que direcionam para o WhatsApp (wa.me ou whatsapp.com).
+  // Dispara o evento 'whatsapp_click' no dataLayer com metadados para que o gestor de tráfego
+  // consiga mapear conversões exatas no Google Tag Manager e otimizar campanhas do Google Ads.
+  const trackWhatsAppClicks = () => {
+    // Inicializa a camada de dados (dataLayer) caso ainda não exista
+    window.dataLayer = window.dataLayer || [];
+
+    // Seleciona todos os links que apontam para o WhatsApp
+    const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]');
+
+    whatsappLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Captura o ID do botão, o texto exibido e a URL atual
+        const buttonId = link.getAttribute('id') || 'sem-id-especificado';
+        const buttonText = link.textContent ? link.textContent.trim().replace(/\s+/g, ' ') : '';
+        const destinationHref = link.getAttribute('href') || '';
+
+        // Envia o evento personalizado para o dataLayer
+        window.dataLayer.push({
+          'event': 'whatsapp_click',
+          'whatsapp_button_id': buttonId,
+          'whatsapp_button_text': buttonText,
+          'whatsapp_destination': destinationHref,
+          'page_location': window.location.href
+        });
+      });
+    });
+  };
+
+  // Inicializa o rastreador de cliques
+  trackWhatsAppClicks();
+
 });
