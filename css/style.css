@@ -1471,6 +1471,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-gold);
 }
 
+/* Garante que o clique sempre seja registrado no <a> com a classe de rastreio,
+   mesmo quando o usuário clica no ícone ou no texto interno do botão */
+.whatsapp-track-btn * {
+  pointer-events: none;
+}
+
 /* 15. BOTÃO FLUTUANTE DO WHATSAPP */
 .whatsapp-floating-btn {
   position: fixed;
